@@ -1,0 +1,36 @@
+.carousel__container {
+    width: 100%;
+}
+/* .carousel__container  {
+    max-width: 100px;
+} */
+.carousel__img {
+    position: relative;
+    margin: 20px;
+}
+.carousel__img svg {
+    max-height: 360px;
+    max-width: 360px;
+}
+.carousel__img.selected svg {
+    height: 380px;
+    width: 380px;
+}
+.carousel__img c {
+    width: 100%;
+}
+.carousel__indicator {
+    padding: 10px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+.carousel__indicator span {
+    margin-right: 15px;
+    width: 40px;
+    height: 2px;
+    display: inline-block;
+    background-color: var(--white-color);
+}
+.carousel__indicator.selected span {
+    height: 5px;
+}
