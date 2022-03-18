@@ -34,8 +34,9 @@ body {
 }
 #root {
   width: 100%;
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 main {
   max-width: 1400px;
@@ -266,6 +267,9 @@ button:hover {
   section {
     padding: 50px 0 80px;
     align-items: flex-start;
+  }
+  section .carousel.carousel-slider {
+    overflow: unset;
   }
   header {
     padding: 15px 20px;

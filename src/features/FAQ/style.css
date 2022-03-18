@@ -34,17 +34,19 @@
 .faq .accordion__button::before {
     display: none;
 }
-.faq .accordion__button::after {
+.faq .arrow-icon {
+    margin-left: 15px;
+}
+.faq .accordion__button svg {
     display: inline-block;
     content: '';
     height: 10px;
     width: 10px;
-    margin-left: 12px;
     border-bottom: 2px solid currentColor;
     border-right: 2px solid currentColor;
     transform: rotate(45deg);
 }
-.faq .accordion__button[aria-expanded="true"]::after {
+.faq .accordion__button[aria-expanded="true"] svg {
     transform: rotate(-135deg);
 }
 @media only screen and (max-width: 800px) {

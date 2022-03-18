@@ -171,16 +171,14 @@ function App() {
         </section>
         <HistorySection />
         <section id="team" className="team">
-          <div>
-            <h1>Our brave team!</h1>
-            <ImagesCarousel
-              infiniteLoop={false}
-              items={renderTeamCarouselItem()}
-              centerSlidePercentage={33}
-              showArrows={false}
-              showStatus={false}
-            />
-          </div>
+          <h1>Our brave team!</h1>
+          <ImagesCarousel
+            infiniteLoop={false}
+            items={renderTeamCarouselItem()}
+            centerSlidePercentage={isMobile() ? 80 : 33}
+            showArrows={false}
+            showStatus={false}
+          />
         </section>
         <FaqSection />
         <Banner />
