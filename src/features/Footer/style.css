@@ -34,6 +34,9 @@ footer .menu__items svg {
   line-height: 26px;
   text-decoration: none;
 }
+footer .logo img {
+  height: 50px;
+}
 @media only screen and (max-width: 800px) {
   footer {
     padding-bottom: 100px;

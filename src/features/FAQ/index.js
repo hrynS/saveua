@@ -26,7 +26,9 @@ const Arrow = () => {
 const FAQ = [
     {
         question: 'Where will all the money go?',
-        answer: 'All the money from minting will be automatically donated to the state support fund.'
+        answer: `All money will be donated to funds to support the people of Ukraine, such as: the military, to help ordinary citizens, as well as to rebuild the city.
+
+        What kind of funds - will be decided by our community, for complete openness!`
     },
     {
         question: 'Who’s on the team?',
@@ -34,29 +36,30 @@ const FAQ = [
     },
     {
         question: 'What is the total supply of NFTs?',
-        answer: 'There will be 10,000 NFTs.'
+        answer: 'There will be 3100 NFTs. Why 3100? Because this is a very symbolic number for Ukraine, because this year the Ukrainian people will celebrate 31 years of independence!'
     },
     {
         question: 'What is the mint price of NFT?',
-        answer: 'Mint price will be announced in our community, check for updetes'
+        answer: 'Mint price will be 0.05 ETH, so that everyone who would like to help has such an opportunity! Also, if you want to donate more, you can mint up to 10 NFT’s, and max 5 at a time'
     },
     {
         question: 'On what blockchain do you planning to run NFT’s?',
-        answerComponent: `
-                <blockquote class="twitter-tweet">
-                    <p lang="en" dir="ltr">
-                        Stand with the people of Ukraine. Now accepting cryptocurrency donations. Bitcoin, Ethereum and USDT.
-                        <br />
-                        <br />
-                        BTC - 357a3So9CbsNfBBgFYACGvxxS6tMaDoa1P
-                        <br />
-                        <br />
-                        ETH and USDT (ERC-20) - 0x165CD37b4C644C2921454429E7F9358d18A45e14
-                    </p>
-                    &mdash;
-                    Ukraine / Україна (@Ukraine)
-                    <a href="https://twitter.com/Ukraine/status/1497594592438497282?ref_src=twsrc%5Etfw">February 26, 2022</a>
-                </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`,
+        // answerComponent: `
+        //         <blockquote class="twitter-tweet">
+        //             <p lang="en" dir="ltr">
+        //                 Stand with the people of Ukraine. Now accepting cryptocurrency donations. Bitcoin, Ethereum and USDT.
+        //                 <br />
+        //                 <br />
+        //                 BTC - 357a3So9CbsNfBBgFYACGvxxS6tMaDoa1P
+        //                 <br />
+        //                 <br />
+        //                 ETH and USDT (ERC-20) - 0x165CD37b4C644C2921454429E7F9358d18A45e14
+        //             </p>
+        //             &mdash;
+        //             Ukraine / Україна (@Ukraine)
+        //             <a href="https://twitter.com/Ukraine/status/1497594592438497282?ref_src=twsrc%5Etfw">February 26, 2022</a>
+        //         </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`,
+        answer: 'NFT’s will be on Ethereum blockchain'
     },
 ]
 

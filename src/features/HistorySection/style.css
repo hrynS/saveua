@@ -1,5 +1,5 @@
-.history {
-    padding: 25px;
+section.history {
+    padding: 25px 150px;
     font-family: var(--emphasis-font);
     align-items: flex-start;
 }
@@ -44,7 +44,8 @@
 }
 .history__text {
     max-width: 800px;
-    padding: 0 0 120px 40px;
+    margin-bottom: 60px;
+    padding: 0 0 60px 40px;
     border-left: var(--history-border);
     color: var(--history-text-color);
     font-family: var(--main-font);
@@ -52,6 +53,7 @@
     font-size: 24px;
     line-height: 28px;
     text-align: start;
+    background-color: var(--history-background-color);
 }
 @media only screen and (max-width: 800px) {
     .history h1 {

@@ -1,6 +1,6 @@
 import './App.css';
 import headerImg from './assets/soldier_header.png';
-import galleryImg from './assets/gallery_img.png';
+import galleryVideo from './assets/gallery_video.mp4';
 import logoImg from './assets/logo.png';
 import { ImagesCarousel } from './features/ImagesCarousel';
 import { HistorySection } from './features/HistorySection';
@@ -144,30 +144,18 @@ function App() {
             <button><a href={discordLink}>Join the community</a></button>
           </div>
         </header>
-        {renderDivider()}
         <section id="about" class="gallery">
           <div class="gallery__column">
-            <h1>Safe Ukraine NFT</h1>
+            <h1>Safe Ukraine</h1>
             <div className='gallery__text'>
               This project was created to help our army in this unfair and merciless war against the Ukrainian people, in the first place.
               We want that 100% of raised money form minting NFTs will be automatically sent to the support fund of the Ukrainian army!
             </div>
           </div>
           <div class="gallery__column">
-            <img src={galleryImg} />
+            <video autoPlay loop src={galleryVideo} />
             <div class="img__overlay"></div>
           </div>
-        </section>
-        <section class="images__gallery">
-          <ImagesCarousel
-            infiniteLoop={true}
-            items={getCarouselImages()}
-            renderItem={renderCarouselImageItem}
-            centerSlidePercentage={isMobile() ? 80 : 33}
-            showThumbs={false}
-            showArrows={false}
-            showStatus={false}
-          />
         </section>
         <HistorySection />
         <section id="team" className="team">
