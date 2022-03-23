@@ -161,15 +161,39 @@ a {
   line-height: 35px;
   color: var(--history-text-color);
 }
-section.gallery .img__overlay {
-  z-index: 1;
-  background: linear-gradient(143.93deg, rgba(30, 82, 217, 0.82) 1.98%, rgba(105, 145, 207, 0) 57.37%, #1E52D9 99.58%);
-}
 section .carousel.carousel-slider {
   overflow: visible;
 }
 section.team {
   padding: 0 150px 0;
+}
+.team__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.team .item {
+  margin: 100px 50px;
+  position: relative;
+  max-width: 33%;
+}
+.team .item:nth-child(1),
+.team .item:nth-child(2),
+.team .item:nth-child(3) {
+  margin-top: 0;
+}
+.team .item:nth-child(1), 
+.team .item:nth-child(4n) {
+  margin-left: 0;
+}
+.team .item:nth-child(3n) {
+  margin-right: 0;
+}
+.team .img__overlay {
+  z-index: 0;
 }
 .team .carousel .control-dots {
   top: 0;
@@ -215,13 +239,19 @@ section.team {
 }
 .team .carousel__img {
   margin: 0;
+  display: flex;
+}
+.team .carousel__img img {
+  z-index: 1;
+  position: relative;
+  width: 100%;
 }
 .img__overlay {
   z-index: -1;
 }
 .vertical__divider:not(:nth-child(1)) {
   position: absolute;
-  left: 0;
+  left: -50px;
   width: calc(100% - 110px);
   height: 1px;
   background-color: var(--history-inactive-color);
@@ -284,6 +314,9 @@ button:hover {
   main {
     max-width: 1200px;
   }
+  .team .item {
+    max-width: 25%;
+  }
 }
 @media only screen and (max-width: 1200px) {
   main {
@@ -293,6 +326,34 @@ button:hover {
 @media only screen and (max-width: 1000px) {
   main {
     max-width: 800px;
+  }
+  .team .item {
+    margin: 50px 20px;
+    max-width: 33%;
+  }
+  .team .item:nth-child(1),
+  .team .item:nth-child(2) {
+    margin-top: 0;
+  }
+  .team .item:nth-child(3) {
+    margin-top: 50px;
+  }
+  .team .item:nth-child(4n) {
+    margin-left: 20px;
+  }
+  .team .item:nth-child(1), 
+  .team .item:nth-child(3n) {
+    margin-left: 0;
+  }
+  .team .item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .team .item:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .vertical__divider:not(:nth-child(1)) {
+    left: -20px;
+    width: calc(100% - 50px);
   }
 }
 @media only screen and (max-width: 800px) {
@@ -336,6 +397,14 @@ button:hover {
   .team .carousel__item {
     padding: 20px 30px;
   }
+  .team .item__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .team .item__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 @media only screen and (max-width: 700px) {
   main {
@@ -351,9 +420,13 @@ button:hover {
     margin-top: -50px;
     width: 120%;
   }
+  section.team div.item {
+    margin: 50px 0;
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .header__img img {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }

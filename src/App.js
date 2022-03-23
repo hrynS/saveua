@@ -2,7 +2,6 @@ import './App.css';
 import headerImg from './assets/soldier_header.png';
 import galleryVideo from './assets/gallery_video.mp4';
 import logoImg from './assets/logo.png';
-import { ImagesCarousel } from './features/ImagesCarousel';
 import { HistorySection } from './features/HistorySection';
 import { FaqSection } from './features/FAQ';
 import { Banner } from './features/Banner';
@@ -87,6 +86,12 @@ const getCarouselImages = () => {
   return listOfImages.map((image, idx) => <img key={idx} src={image} />)
 };
 
+const mobileWidthInPx = 800;
+
+const isMobile = () => {
+  return window.innerWidth <= mobileWidthInPx;
+}
+
 const renderTeamCarouselItem = () => {
   return TEAM.map(({
     name,
@@ -94,8 +99,10 @@ const renderTeamCarouselItem = () => {
     linkedinUrl,
     imgSrc,
   }, idx) => {
+    const itemsInRow = isMobile() ? 2 : 3;
+    const isColumn = window.innerWidth <= 500;
     return (
-      <div className='carousel__item'>
+      <div className='item'>
         <div className='carousel__header'>
           <div>
             <div className='item__title'>
@@ -115,18 +122,11 @@ const renderTeamCarouselItem = () => {
           <img src={require(`./assets/${imgSrc}`)} />
           <div class="img__overlay"></div>
         </div>
-        {idx !== 0 && (<div className='vertical__divider'></div>)}
+        {(idx !== 0 && idx % itemsInRow !== 0 && !isColumn) && (<div className='vertical__divider'></div>)}
       </div>
     );
   });
 };
-
-const mobileWidthInPx = 800;
-
-const isMobile = () => {
-  console.log('innerWidth', window.innerWidth);
-  return window.innerWidth <= mobileWidthInPx;
-}
 
 function App() {
   return (
@@ -160,13 +160,7 @@ function App() {
         <HistorySection />
         <section id="team" className="team">
           <h1>Our brave team!</h1>
-          <ImagesCarousel
-            infiniteLoop={false}
-            items={renderTeamCarouselItem()}
-            centerSlidePercentage={isMobile() ? 80 : 33}
-            showArrows={false}
-            showStatus={false}
-          />
+          <div className="team__items">{renderTeamCarouselItem()}</div>
         </section>
         <FaqSection />
         <Banner />

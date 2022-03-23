@@ -45,7 +45,7 @@ section.history {
 .history__text {
     max-width: 800px;
     margin-bottom: 60px;
-    padding: 0 0 60px 40px;
+    padding: 10px 0 60px 40px;
     border-left: var(--history-border);
     color: var(--history-text-color);
     font-family: var(--main-font);
