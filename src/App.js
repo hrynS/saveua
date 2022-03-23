@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import './App.css';
 import headerImg from './assets/soldier_header.png';
 import galleryVideo from './assets/gallery_video.mp4';
@@ -7,15 +8,6 @@ import { FaqSection } from './features/FAQ';
 import { Banner } from './features/Banner';
 import { Footer } from './features/Footer';
 import { menuLinks, socialNetworksToIcons, TEAM, discordLink } from './constants';
-import { Fragment } from 'react';
-
-const renderDivider = () => (
-  <div class="divider">
-    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="82" viewBox="0 0 1440 82">
-      <path d="M719.5 81.7015L0 0V5399H1440V0L719.5 81.7015Z" />
-    </svg>
-  </div>
-);
 
 const renderLogo = () => {
   return (
@@ -57,33 +49,6 @@ const renderMenuLinks = () => {
       })}
     </div>
   )
-};
-
-const renderCarouselImageItem = (item, { isSelected }) => {
-  if (isSelected) {
-    return (
-      <div className='carousel__img selected'>
-        {item}
-        <div class="img__overlay"></div>
-      </div>);
-  }
-
-  return (
-    <div className='carousel__img'>
-      {item}
-      <div class="img__overlay"></div>
-    </div>);
-};
-
-const importAll = (r) => {
-  return r.keys().map(r);
-}
-
-const listOfImages = importAll(require.context('./assets/gallery', false, /\.(png)$/));
-console.log('listOfImages', listOfImages);
-
-const getCarouselImages = () => {
-  return listOfImages.map((image, idx) => <img key={idx} src={image} />)
 };
 
 const mobileWidthInPx = 800;
@@ -148,12 +113,15 @@ function App() {
           <div class="gallery__column">
             <h1>Safe Ukraine</h1>
             <div className='gallery__text'>
-              This project was created to help our army in this unfair and merciless war against the Ukrainian people, in the first place.
-              We want that 100% of raised money form minting NFTs will be automatically sent to the support fund of the Ukrainian army!
+              This project was created to help our nation in this unfair and merciless war against the Ukrainian people!
+              <br />
+              <br />
+              Our goal is that 100% of the funds raised go to the charity of our army, victims of the war, as well as assistance to the state
+              Therefore, we want our community to decide where all the money raised will go. So that everything is as open and honest as possible with respect to everyone!
             </div>
           </div>
           <div class="gallery__column">
-            <video autoPlay loop src={galleryVideo} />
+            <video autoPlay loop muted src={galleryVideo} />
             <div class="img__overlay"></div>
           </div>
         </section>
