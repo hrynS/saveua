@@ -147,7 +147,7 @@ a {
 .gallery__column:nth-child(2) {
   max-width: 410px;
 }
-.gallery__column img {
+.gallery__column video {
   width: 100%;
 }
 .gallery__text {
