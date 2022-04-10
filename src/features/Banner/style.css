@@ -34,7 +34,6 @@
 }
 .banner button {
     margin-top: 40px;
-    background-color: var(--indigo-color);
 }
 .banner button:hover {
     background-color: #90B2F2;

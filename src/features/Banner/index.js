@@ -12,7 +12,7 @@ export const Banner = () => {
                     <div className='text'>
                         Your help means our life tomorrow. Help our country today!
                     </div>
-                    <button><a href={discordLink}>Join our discord</a></button>
+                    <button className='inverted'><a href={discordLink}>Join our discord</a></button>
                 </div>
             </div>
         </section>

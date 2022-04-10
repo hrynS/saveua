@@ -60,7 +60,7 @@ export const HistorySection = () => {
     }
     return (
         <section id="history" class="history">
-            <h1>Why this project? History.</h1>
+            <h1 className='display-block'>Why this project? History.</h1>
             <div class="history__progress-line"></div>
             {renderHistoryItem()}
         </section>

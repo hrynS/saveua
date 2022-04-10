@@ -7,6 +7,7 @@ import { HistorySection } from './features/HistorySection';
 import { FaqSection } from './features/FAQ';
 import { Banner } from './features/Banner';
 import { Footer } from './features/Footer';
+import { Partners } from './features/Partners';
 import { menuLinks, socialNetworksToIcons, TEAM, discordLink } from './constants';
 
 const renderLogo = () => {
@@ -130,6 +131,7 @@ function App() {
           <h1>Our brave team!</h1>
           <div className="team__items">{renderTeamCarouselItem()}</div>
         </section>
+        <Partners/>
         <FaqSection />
         <Banner />
         <Footer

@@ -58,6 +58,9 @@ header  button {
   left: 50%;
   transform: translate(-50%, 50%);
 }
+.display-block {
+  display: block;
+}
 .header__img {
   position: relative;
   text-align: center;
@@ -124,6 +127,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: inherit;
 }
@@ -299,6 +303,12 @@ button {
   font-size: 36px;
   border: none;
   cursor: pointer;
+}
+button.inverted {
+  background-color: var(--indigo-color); 
+}
+button.inverted:hover {
+  background-color: #90B2F2;
 }
 button a {
   padding: 15px 23px;
