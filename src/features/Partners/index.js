@@ -7,10 +7,10 @@ export const Partners = () => {
           <h1 className='display-block'>Our partner</h1>
           <div className='partners__container'>
             <div className='partners__description'>
-                Ukraine Support Foundation
+                <div className='partners__description_subtitle'>Ukraine Support Foundation</div>
             <br/>
             <br/>
-            A benevolent foundation, created by Ukrainians in Poland to help support that support of Ukraine, as it suffered from the war with Russia.
+            <div className='partners__description_text'>A benevolent foundation, created by Ukrainians in Poland to help support that support of Ukraine, as it suffered from the war with Russia.</div>
             </div>
           <div className='partners__cta'>
             <div className='partners__img-container'>

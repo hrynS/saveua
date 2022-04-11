@@ -303,6 +303,7 @@ button {
   font-size: 36px;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 button.inverted {
   background-color: var(--indigo-color); 
@@ -446,5 +447,10 @@ button:hover {
 @media only screen and (max-width: 500px) {
   .header__img img {
     margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  button {
+    font-size: 24px;
   }
 }
