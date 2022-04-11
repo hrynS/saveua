@@ -40,7 +40,7 @@ export const TEAM = [
         imgSrc: 'team/1.png',
     },
     {
-        name: 'Dmitro',
+        name: 'Dmytro',
         occupation: 'Illustrations',
         linkedinUrl: 'https://www.linkedin.com/in/dmytro-radchenko-535aaa234',
         imgSrc: 'team/2.png',

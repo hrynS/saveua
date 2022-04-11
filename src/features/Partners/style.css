@@ -4,7 +4,7 @@
     font-family: var(--emphasis-font);
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 50px;
     line-height: 60px;
 }
 .partners__cta button {
@@ -17,7 +17,7 @@
     justify-content: space-between;
 }
 .partners__container .partners__description_subtitle {
-    margin-bottom: 55px;
+    margin-bottom: 27px;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
