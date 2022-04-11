@@ -17,18 +17,20 @@
     justify-content: space-between;
 }
 .partners__container .partners__description_subtitle {
+    margin-bottom: 55px;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 47px;
+    color: #E7BC25;
 }
 .partners__container .partners__description_text {
-    display: inline-block;
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 36px;
+    line-height: 42px;
     text-align: start;
+    color: var(--history-text-color);
 }
 .partners__container > div {
     display: flex;
@@ -53,6 +55,17 @@
     .partners__description {
         margin-bottom: 50px;
     }  
+}
+@media only screen and (max-width: 768px) {
+    .partners__container .partners__description_subtitle {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .partners__container .partners__description_text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 @media only screen and (max-width: 400px) {
     .partners__cta button {
